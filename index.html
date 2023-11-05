@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body  style="background-image: url('./images/background.jpg');">
+    <div class="flex-container">
+        <div class="header">
+            <h1>ETCH-A-SKETCH</h1>
+            <div class="sketch-board" data-selection="sketch">
+               <!--  <div class="grid-container" data-selection="grid-container">
+                </div> -->
+            </div>
+            <div class="controls">
+                <button class="clear" onclick="resetBoard()">Clear</button>
+                <button onclick="changeColor('black')" class="black">Black</button>
+                <button onclick="changeColor('white')" class="white">White</button>
+                <button onclick="changeColor('random')" class="random">Random</button>
+            </div>
+
+            <div>
+                <input 
+                type="text" 
+                placeholder="Enter grid size" 
+                class="grid-size" 
+                value="16" 
+                onchange="changeSize(this.value)"
+                />
+                <button class="resize" data-selection="resize">Resize</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

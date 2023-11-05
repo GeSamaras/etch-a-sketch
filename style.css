@@ -1,0 +1,71 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header {
+    font-size: 2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: seashell;
+    text-align: center;
+    margin: 1rem;
+}
+
+.sketch-board {
+    display: grid;
+    width: 600px;
+    height: 600px;
+}
+
+.sketch-board div {
+    opacity: 0.8;
+
+    border: 1px steelblue solid;
+}
+
+button {
+    background-color: rgb(70, 130, 180, 0.7);
+    color: seashell;
+    border: 1px solid steelblue;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+input {
+    border: 1px solid steelblue;
+    background-color: rgba(234, 238, 242, 0.8);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+body {
+    background-color: #a1a1aa;
+    background-size: cover;
+}
